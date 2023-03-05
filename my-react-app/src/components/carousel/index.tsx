@@ -4,7 +4,7 @@ import { baseTheme } from "../../styles/theme";
 import Right from "../../assets/right.svg";
 import Left from "../../assets/left.svg";
 
-export function Carousel({children}) {
+export function Carousel({children} : {children: any}) {
     const [current, setCurrent] = useState(0);
 
     const prev = () => setCurrent(currentSlide => currentSlide === 0 ? children.length - 1 : currentSlide - 1);
@@ -24,7 +24,7 @@ export function Carousel({children}) {
             <S.CircleContainer>
                 <S.CircleList>
                     {
-                        children.map((item, index) => <S.Circle key={Math.random()} color={`${current === index ? baseTheme.colors.success : baseTheme.colors.font}`}/>)
+                        children.map((item: any, index: number) => <S.Circle key={Math.random()} color={`${current === index ? baseTheme.colors.success : baseTheme.colors.font}`}/>)
                     }
                 </S.CircleList>
             </S.CircleContainer>

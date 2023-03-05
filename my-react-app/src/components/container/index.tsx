@@ -8,7 +8,7 @@ import { limit, url, maxLenght, firstPage, interfaceProduct } from "../../const"
 
 export function Container() {
     const [currentPage, setCurrentPage] = useState(firstPage);
-    const [product, setProduct] = useState([]);
+    const [product, setProduct] = useState<any>([]);
     const [loading, setloading] = useState(true);
 
     useEffect(() => {
@@ -39,7 +39,7 @@ export function Container() {
                 ? <S.Spinner />
                 : <>
                     <S.ListCard>
-                        {product.map(item => <Card key={item.id} value={item} />)}
+                        {product.map((item: interfaceProduct) => <Card key={item.id} value={item} />)}
                     </S.ListCard>
                     {
                         product.length === maxLenght 
