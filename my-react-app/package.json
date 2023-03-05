@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b -d build",
     "predeploy": "npm run build"
   },
   "dependencies": {
