@@ -1,7 +1,7 @@
 {
   "name": "my-react-app",
-  "homepage": "https://YaRolly.github.io",
   "private": true,
+  "homepage": "https://YaRolly.github.io/my-react-app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
