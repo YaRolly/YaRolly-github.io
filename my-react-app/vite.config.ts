@@ -5,6 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build'
+    target: 'esnext',
+    outDir: 'build',
+    assetsDir: '',
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      output: {
+        format: 'cjs'
+      }
+    }
   }
 })
