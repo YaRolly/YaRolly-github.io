@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build ",
-    "clean": "gh-pages-clean",
-    "start": "vite"
+    "clean": "gh-pages-clean"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
