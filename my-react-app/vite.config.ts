@@ -19,5 +19,5 @@ export default defineConfig({
     'process.env': {},
     viteBase: process.env.NODE_ENV === 'production' ? '/yarolly-github.io/' : '/'
   },
-  base: '/yarolly-github.io/',
+  base: './',
 })
