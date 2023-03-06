@@ -5,7 +5,19 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build'
+    outDir: 'build',
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    },
+    assetsDir: '.',
+    manifest: true,
+    emptyOutDir: true
   },
-  base: '/yarolly-github.io/'
+  define: {
+    'process.env': {},
+    viteBase: process.env.NODE_ENV === 'production' ? '/yarolly-github.io/' : '/'
+  },
+  base: '/yarolly-github.io/',
 })
