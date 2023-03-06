@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import * as S from './styles';
 import { baseTheme } from "../../styles/theme";
-import Right from "../../assets/right.svg";
-import Left from "../../assets/left.svg";
 
 export function Carousel({children} : {children: any}) {
     const [current, setCurrent] = useState(0);
@@ -15,10 +13,10 @@ export function Carousel({children} : {children: any}) {
             <S.SliderList style={{transform: `translateX(-${current*100}%)`}}>{children}</S.SliderList>
             <S.ListBottom>
                 <button onClick={prev}>
-                    <img src={Left} alt="left" />
+                    <img src='../../../public/left.svg' alt="left" />
                 </button>
                 <button onClick={next}>
-                    <img src={Right} alt="right" />
+                    <img src='../../../public/right.svg' alt="right" />
                 </button>
             </S.ListBottom>
             <S.CircleContainer>

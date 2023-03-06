@@ -1,7 +1,7 @@
 import * as C from '../../styles/components';
 import * as S from './styles';
 import { Card } from "../card/index";
-import YourSvg from "../../assets/reversal.svg";
+
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { limit, url, maxLenght, firstPage, interfaceProduct } from "../../const";
@@ -46,7 +46,7 @@ export function Container() {
                         ?  <C.TextButton>Объявлений больше нет</C.TextButton>
                         :  <S.ButtonMain>
                                 <C.TextButton onClick={handleClick}>Показать еще</C.TextButton>
-                                <S.ImageButton src={YourSvg} alt="reversal" />
+                                <S.ImageButton src='../../../public/reversal.svg' alt="reversal" />
                         </S.ButtonMain>
                     }
                 </>

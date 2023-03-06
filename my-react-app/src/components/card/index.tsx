@@ -20,16 +20,16 @@ export function Card({value} : {value: interfaceProduct}) {
                     {slides.map(item => (<S.ImageAd key={item.id} src={item.url} alt="image" />))}
                 </Carousel>
                 <S.IconList>
-                    <S.Icon src={Compare} alt="compare" />
-                    <S.Icon src={Like} alt="like" />
+                    <S.Icon src='../../../public/compare.svg' alt="compare" />
+                    <S.Icon src='../../../public/like.svg' alt="like" />
                 </S.IconList>
             </S.ListImage>
             <S.Info>
                 <S.Row>
                     <S.OldPrice>{value.oldPrice} ₽</S.OldPrice>
                     <S.IconsRow>
-                        <S.Icon src={Car} alt="compare" />
-                        <S.Icon src={Favorites} alt="compare" />
+                        <S.Icon src='../../../public/car.svg' alt="car" />
+                        <S.Icon src='../../../public/favorites.svg' alt="favorites" />
                     </S.IconsRow>
                 </S.Row>
                 <S.CurrentPrice>{value.price} ₽</S.CurrentPrice>
