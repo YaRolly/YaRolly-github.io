@@ -13,10 +13,10 @@ export function Carousel({children} : {children: any}) {
             <S.SliderList style={{transform: `translateX(-${current*100}%)`}}>{children}</S.SliderList>
             <S.ListBottom>
                 <button onClick={prev}>
-                    <img src='../../../public/left.svg' alt="left" />
+                    <img src='.../../../public/left.svg' alt="left" />
                 </button>
                 <button onClick={next}>
-                    <img src='../../../public/right.svg' alt="right" />
+                    <img src='.../../../public/right.svg' alt="right" />
                 </button>
             </S.ListBottom>
             <S.CircleContainer>
