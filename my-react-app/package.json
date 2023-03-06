@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base '/yarolly-github.io/'",
     "preview": "vite preview",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build ",
